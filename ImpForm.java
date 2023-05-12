@@ -150,8 +150,8 @@ public class ImpForm {
 	        fd.setFile("*.pdf;*.doc;*.zip;*.docx");
 	        fd.setVisible(true);
 	        }});
-	f.add(lbp);
-	f.add(bt);
+			f.add(lbp);
+			f.add(bt);
 	
 	//submission--
 	Label lbs= new Label("Submit Here:");
@@ -164,7 +164,7 @@ public class ImpForm {
 	 	btn.addActionListener(new ActionListener() {
 		 public void actionPerformed(ActionEvent ae) {
 			 
-			 //Dialog Box--
+			 //Dialog_Box--
 			 Dialog di = new Dialog(f,"Submit:");
 			 di.add(new Label("Are You Sure To Submit?"));
 			 Button btd = new Button("Yes");
@@ -174,14 +174,14 @@ public class ImpForm {
 			 di.setLayout(new FlowLayout());
 			 di.setVisible(true);
 			 
-			
+			 //Closing_DialogBox--
 			 di.addWindowListener(new WindowAdapter() {
 					public void windowClosing(WindowEvent d) {
 						di.dispose();
 					}
 				});
 			 
-			 
+			 //Action_for_"Yes"_BUtton--
 			 btd.addActionListener(new ActionListener() {
 				 public void actionPerformed(ActionEvent be) {
 						di.dispose();
@@ -190,8 +190,8 @@ public class ImpForm {
 		 }
 	 });
 	 
-	f.add(btn);
-	f.add(lbs);
+			f.add(btn);
+			f.add(lbs);
 	
 	//WindowCloser--
 	f.addWindowListener(new WindowAdapter() {
