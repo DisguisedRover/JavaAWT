@@ -7,7 +7,7 @@ public class ImpForm {
 	//Frame_Construction--
 	public static void main(String[]args) {
 	Frame f = new Frame("Paper Submission");
-		f.setSize(1280,720);
+		f.setSize(1920,1080);
 		f.setLayout(null);
 		f.setVisible(true);
 	
@@ -105,7 +105,7 @@ public class ImpForm {
 			f.add(p);
 	
 	//Description--
-	Label lde= new Label("Deacription:");
+	Label lde= new Label("Description:");
 		lde.setBounds(500,420,203,30);
 		lde.setFont(new Font("Arial",Font.BOLD,16));
 		TextField de= new TextField();
